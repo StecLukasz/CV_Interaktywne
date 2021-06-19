@@ -9,6 +9,7 @@ public class Skills {
     @Id
     @GeneratedValue
 
+    private Long id;
     private Integer html;
     private Integer css3;
     private Integer php;
@@ -18,8 +19,9 @@ public class Skills {
     @JoinColumn(name = "person_id")
     private Person person;
 
-    public Skills(Integer html, Integer css3, Integer php, Integer javaScript) {
+    public Skills(Long id, Integer html, Integer css3, Integer php, Integer javaScript) {
 
+        this.id= id;
         this.html = html;
         this.css3 = css3;
         this.php = php;
@@ -29,6 +31,21 @@ public class Skills {
     public Skills() {
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public Integer getHtml() {
         return html;

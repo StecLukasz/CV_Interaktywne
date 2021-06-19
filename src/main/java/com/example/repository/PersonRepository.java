@@ -12,6 +12,5 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 
     @Bean
     Person save(Person entity);
-    Person deleteSkill(String skill);
     List<Person> findAll();
 }

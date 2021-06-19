@@ -9,7 +9,7 @@ public class Person {
 
     @Id
     @GeneratedValue
-    private Integer id;
+    private Long id;
     private String name;
     private String surName;
     private String eMail;
@@ -27,7 +27,7 @@ public class Person {
     }
 
 
-    public Person(Integer id,String name, String surName, String eMail, double phoneNumber, String hobby, String experience, String someWords) {
+    public Person(Long id,String name, String surName, String eMail, double phoneNumber, String hobby, String experience, String someWords) {
 
         this.id = id;
         this.name = name;
@@ -39,11 +39,11 @@ public class Person {
         this.someWords = someWords;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

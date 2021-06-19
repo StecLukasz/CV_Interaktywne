@@ -83,7 +83,7 @@
                                             About me
                                         </h5>
                                     </div>
-                                    <p class="lead">
+                                    <p class="lead" name="'<c:url value="${person.ge}" ">
                                         Doświadczenie zawodowe
                                     </p>
                                     <p class="lead">
@@ -92,9 +92,7 @@
                                     <p class="lead">
                                         Start
                                     <ul>
-                                        <button type="submit" class="btn btn-primary">EDIT
-                                        <a class="nav-link scrollto" href="/aboutEdit"></a>
-                                        </button>
+                                    <a href='<c:url value="/aboutEdit"/>'><input value="EDIT" class="btn btn-primary"></a>
                                     </ul>
 
                                 </div>

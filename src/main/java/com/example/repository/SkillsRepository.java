@@ -1,5 +1,6 @@
 package com.example.repository;
 
+import com.example.model.Person;
 import com.example.model.Skills;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -13,6 +14,4 @@ public interface SkillsRepository extends JpaRepository<Skills, Long> {
     List<Skills> findAll();
     Skills save(Skills skills);
 
-    void delete(Long aLong);
-    Optional<Skills> findById(Long id);
 }
